@@ -1,0 +1,127 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaf3f3; /* Світло-блакитний фон */
+    color: #2c3e50; /* Темно-сірий текст */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Стиль для навігації */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1abc9c; /* Яскраво-зелений */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #16a085; /* Темніший зелений */
+    color: #fff;
+}
+
+/* Стиль заголовка */
+h1 {
+    color: #34495e; /* Теплий темно-сірий */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Стиль для форми */
+form {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Плавна тінь */
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Стиль для міток */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #34495e;
+    font-size: 14px;
+}
+
+/* Стиль для полів вводу */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7; /* Світло-сірий */
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.5); /* Плавна зелена підсвітка */
+}
+
+/* Стиль для кнопки */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1abc9c; /* Яскравий зелений */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #16a085;
+    transform: scale(1.02); /* Легке збільшення */
+}
+
+/* Додатковий стиль для мобільних пристроїв */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
