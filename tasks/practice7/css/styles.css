@@ -1,0 +1,116 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #f8f9fa, #e9ecef);
+    color: #333;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background: linear-gradient(90deg, #ff7e5f, #fd5d93);
+    color: #ffffff;
+    padding: 50px 20px;
+    border-bottom: 5px solid #ff6347;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header__title {
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header__subtitle {
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #fdfdfd;
+    margin-top: 10px;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro__title {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro__description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #3b9a9c;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.button--primary {
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+}
+
+.button--primary:hover {
+    background: linear-gradient(90deg, #38ef7d, #11998e);
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2c3e50;
+    color: #ffffff;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #16a085;
+}
